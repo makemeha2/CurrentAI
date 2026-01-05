@@ -1,0 +1,10 @@
+[project]
+name = "current-ai"
+version = "0.1.0"
+description = "AI test backend"
+requires-python = "==3.13.2"
+
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]"
+]
