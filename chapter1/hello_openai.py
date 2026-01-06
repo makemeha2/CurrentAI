@@ -2,13 +2,13 @@ import os
 from urllib import response
 
 from dotenv import load_dotenv
-from openai import OpenAI, api_key
+from openai import OpenAI
 
 # .env 파일에서 환경 변수 로드
 load_dotenv()
 
 # 오픈 AI API 키 가져오기
-api_key = os.environ.get("OPENAI_API_KEY")
+api_key = os.environ.get("OPENAI_API_KEY") 
 
 client = OpenAI(api_key=api_key)
 

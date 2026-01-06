@@ -9,7 +9,8 @@ dependencies = [
   "uvicorn[standard]",
   "openai",
   "anthropic",
-  "rich"
+  "rich",
+  "tenacity>=9.1.2",
 ]
 
 [dependency-groups]

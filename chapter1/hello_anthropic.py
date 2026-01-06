@@ -1,11 +1,12 @@
 import os
-from dotenv import load_dotenv
+
 import anthropic
+from dotenv import load_dotenv
 
 load_dotenv()
 
-api_key = os.environ.get("OPENAI_API_KEY")
-client = anthropic.Anthropic()
+api_key = os.environ.get("ANTHROPIC_API_KEY")
+client = anthropic.Anthropic(api_key=api_key)
 
 conversation = []
 
@@ -17,7 +18,7 @@ response = client.messages.create(
     messages=conversation
 )
 
-assistant_message = response.content[0].text
+assistant_message = response.content[0].text  # type: ignore[attr-defined]
 print(assistant_message)
 conversation.append({"role" : "assistant", "content" : assistant_message})
 
@@ -29,7 +30,7 @@ response = client.messages.create(
     messages=conversation
 )
 
-print(response.content[0].text)
+print(response.content[0].text) # type: ignore
 
 # if __name__ == "__main__":
 #     prompt = """
