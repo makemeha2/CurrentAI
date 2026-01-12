@@ -13,6 +13,12 @@ dependencies = [
   "tenacity>=9.1.2",
   "python-multipart>=0.0.21",
   "langchain[anthropic,openai]>=1.2.1",
+  "numpy>=2.4.1",
+  "langchain-community>=0.4.1",
+  "faiss-cpu>=1.13.2",
+  "unstructured>=0.18.27",
+  "duckduckgo-search>=8.1.1",
+  "ddgs>=9.10.0",
 ]
 
 [dependency-groups]
