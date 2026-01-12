@@ -19,6 +19,7 @@ dependencies = [
   "unstructured>=0.18.27",
   "duckduckgo-search>=8.1.1",
   "ddgs>=9.10.0",
+  "openai-agents>=0.6.5",
 ]
 
 [dependency-groups]
